@@ -1,0 +1,81 @@
+/*** Styles for all Fieldsets ***/
+
+fieldset[class*=' bolt-field-'],
+fieldset[class^='bolt-field-'] {
+    // Move standard boostrap form-group margins from here to data-bolt-fieldset to position prefix/postfix
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+
+    /// Label
+    label,
+    .control-label {
+        color: $dove;
+    }
+
+    // Main label
+    label.main {
+        color: $mine;
+    }
+
+    // Info popup
+    .info-pop {
+        color: $alto;
+    }
+}
+
+/*** Styles for all filelists/imagelists ***/
+
+fieldset.bolt-field-filelist,
+fieldset.bolt-field-imagelist {
+    // Empty placeholder
+    p {
+        color: $dove;
+        font-style: italic;
+    }
+
+    .list {
+        border: 1px solid $concrete;
+        background-color: $white;
+        border-radius: 3px;
+    }
+
+    .item {
+        border: 2px solid $concrete;
+        border-radius: 3px;
+        background: $white;
+
+        &.selected {
+            border: 2px solid $btn-tertiary-bg;
+        }
+
+        &.zombie {
+            border: 2px solid $milano;
+            opacity: 0.1;
+        }
+
+        input.title {
+            border: 1px solid $concrete;
+            background-color: $white;
+        }
+
+        // Remove button
+        a.remove {
+            color: $chalice;
+            border-radius: 3px;
+
+            &:hover {
+                background: $concrete;
+            }
+        }
+
+        // File description
+        span.desc {
+            color: $alto;
+        }
+
+        //
+        .icon {
+            color: $alto;
+        }
+    }
+}

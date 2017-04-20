@@ -3,12 +3,9 @@ html {
 }
 
 body {
-    background: $basebgcolour;
-    color: $bodytextcolour;
     font-size: 13px;
     min-height: 100%;
 }
-
 
 body.popup {
     padding: 6px 12px 0;
@@ -31,12 +28,9 @@ body.popup {
  */
 
 div.extension {
-    border: 1px solid #CCC;
-    background: #FFF;
     border-radius: 2px;
     padding: 0 10px 8px;
     margin: 0 10px 8px 0;
-    box-shadow: 2px 2px 0px rgba(0, 0, 0, .3);
 }
 
 div.extension h3 {
@@ -60,7 +54,6 @@ blockquote.quote {
     line-height: 26px;
     font-style: italic;
     font-family: "Times New Roman", Georgia;
-    color: #AAA;
 }
 
 blockquote.quote cite {
@@ -70,7 +63,6 @@ blockquote.quote cite {
     line-height: 18px;
     font-style: normal;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #999;
 }
 
 /**
@@ -100,14 +92,6 @@ blockquote.quote cite {
 
 /* DataTables Overrides */
 
-table.dataTable thead .sorting,
-table.dataTable thead .sorting_asc:after,
-table.dataTable thead .sorting_desc,
-table.dataTable thead .sorting_asc_disabled,
-table.dataTable thead .sorting_desc_disabled {
-    background: transparent;
-}
-
 table.dataTable thead .sorting_asc:after {
     content: "\f0de";
     float: right;
@@ -124,61 +108,21 @@ table.dataTable thead .sorting:after {
     content: "\f0dc";
     float: right;
     font-family: fontawesome;
-    color: rgba(50, 50, 50, .5);
 }
 
 .show-grid [class^="col-"] {
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 1px solid #ddd;
-    background-color: #eee !important;
 }
 
 .show-grid {
     margin: 15px 0;
 }
 
-// Todo: move this.
 .login .logo {
-    margin-top: 100px;
+    margin-top:100px;
     width: 179px;
     height: auto;
-}
-
-// Todo: move this.
-body.exception {
-    .logo {
-        margin-top: 30px;
-        width: 120px;
-        height: auto;
-    }
-    code {
-        white-space: pre;
-        word-wrap: break-word;
-    }
-
-    p.exception {
-        font-size: 130%;
-        margin: 2em 0;
-    }
-
-    td {
-        font-family: $fonts-family-monospace;
-    }
-
-    th {
-        min-width: 4em;
-    }
-
-    pre[data-line] {
-        padding-left: 4.1em;
-    }
-
-    .dim {
-        color: #888;
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
-
 }
 
 .dropdown-menu .nav-header {
@@ -187,12 +131,14 @@ body.exception {
     padding: 3px 12px;
 }
 
-form#filescreenuploader fieldset > div {
-    float: left;
-    margin-right: 6px;
-    margin-top: 6px;
-    display: inline;
-    width: 100%;
+form#filescreenuploader {
+    div {
+     // float: left;
+        margin-right: 6px;
+     // margin-top: 6px;
+        display: inline;
+     // width: 100%;
+    }
 }
 
 .relatedfiles {

@@ -1,0 +1,59 @@
+#editcontent {
+
+    /*** General ***/
+
+    small {
+        color: $dove;
+    }
+
+    input,
+    select,
+    textarea {
+        border-radius: 2px;
+        border-color: $silver;
+    }
+
+    .error {
+        border-color: darken($tamarillo, 10);
+        color: $white;
+        background: $tamarillo;
+    }
+
+    .cke_error {
+        border-color: darken($tamarillo, 10);
+    }
+
+    /*** Dropzone ***/
+
+    .dropzone.hover,
+    .dropzone.in {
+        background: $link-water;
+
+        & * {
+            opacity: 0.7;
+        }
+    }
+
+    .imageholder {
+        overflow: hidden;
+
+        img {
+            border: 1px solid $alto;
+        }
+    }
+
+    /*** Input: Textarea ***/
+
+    textarea {
+        color: $dove;
+    }
+
+    /*** Input: Markdown ***/
+
+    .uk-htmleditor-navbar {
+        border-top: 1px solid $alto;
+        border-left: 1px solid $alto;
+        border-right: 1px solid $alto;
+    }
+
+}

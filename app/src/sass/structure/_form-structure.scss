@@ -1,8 +1,3 @@
-/**
- * Editing content
- */
-
-
 label {
     display: block;
     margin-bottom: 3px;
@@ -20,7 +15,7 @@ label {
 .form-horizontal {
     .control-label {
         text-align: left;
-        font-size: $font-size-base + 1px;
+        font-size: $font-size-base + 0.1rem;
         font-weight: normal;
         margin-bottom: 5px;
     }
@@ -76,34 +71,20 @@ fieldset.checkbox {
     margin-right: 4px;
 }
 
-.ui-sortable-helper {
-    border: 1px solid #999;
-    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.3);
-    opacity: 0.5;
-}
-
 .ui-sortable-placeholder {
-    border: 1px dashed #666;
     visibility: visible !important;
-    opacity: 0.5;
 }
 
 #filtertabs {
     margin-bottom: 16px;
     border: 0;
-    border-bottom: 1px solid darken($filtertabs, 10);;
 
     a {
-        color: $filtertab-color;
-        background-color: $filtertabs; // desaturate(lighten($boltblue, 60%), 30);
-        border: 1px solid darken($filtertabs, 10);
         cursor: pointer;
         padding: 5px 12px;
         font-weight: normal;
 
         &:hover {
-            color: #444;
-            background-color: #FFF !important;
             border-bottom: 0;
         }
 
@@ -114,16 +95,6 @@ fieldset.checkbox {
 
     li {
         margin-right: 2px;
-
-        &.active {
-
-            a {
-                background-color: $basebgcolour;
-                border: 1px solid darken($filtertabs, 20);
-                border-bottom: 1px solid $basebgcolour;
-                color: $filtertab-active-color;
-            }
-        }
     }
 }
 
@@ -138,7 +109,7 @@ div.datetime-container {
     }
 }
 
-form .complexity-progress {
+form .progress {
     height: 7px;
     margin: 2px 0 0 0;
 }

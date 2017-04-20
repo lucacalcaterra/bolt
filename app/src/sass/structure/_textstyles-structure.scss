@@ -1,3 +1,4 @@
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0.5em 0;
@@ -18,22 +19,7 @@ h2 {
 }
 
 a {
-    color: $linkmain;
     font-weight: bold;
-}
-
-a:link {
-    color: $linkmain;
-}
-
-a:visited {
-    color: $linkvisited;
-}
-
-a:focus,
-a:hover,
-a:active {
-    color: $linkactive;
 }
 
 strong, b {
@@ -53,13 +39,9 @@ tt, code {
     padding: 1px 2px;
     border: 0;
     white-space: pre;
-    color: #555;
-    background-color: #E8E8E8;
 }
 
 pre {
-    background-color: #F2F2F2;
-    color: #555;
     padding: 2px 4px;
     font-family: $fonts-family-monospace;
 }
@@ -73,22 +55,4 @@ h1 span {
     float: right;
     font-size: 50%;
     margin: 0.45em 0 -0.45em -0;
-    color: #666;
 }
-
-.status-timed {
-    color: #A80; // #0066FF;
-}
-
-.status-published {
-    color: #7FA800; // #43AC6A;
-}
-
-.status-held {
-    color: #CA2300; // #F04124;
-}
-
-.status-draft {
-    color: #0569E2; // #99F;
-}
-

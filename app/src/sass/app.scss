@@ -12,55 +12,54 @@ $navbar-padding-horizontal: 0;
  * We do seperate imports here, instead of just importing 'bootstrap.scss', because we do not need
  * all of the components.
  */
-// Core variables and mixins.
-@import "bootstrap/variables";
-@import "bootstrap/mixins";
 
-// Reset.
-@import "bootstrap/normalize";
-@import "bootstrap/print";
+// Core variables and mixins
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/custom";
 
-// Core CSS.
-@import "bootstrap/scaffolding";
-@import "bootstrap/type";
-@import "bootstrap/code";
-@import "bootstrap/grid";
-@import "bootstrap/tables";
-@import "bootstrap/forms";
-@import "bootstrap/buttons";
+// Reset and dependencies
+@import "scss/normalize";
+@import "scss/print";
 
-// Components.
-@import "bootstrap/component-animations";
-// @import "bootstrap/glyphicons";
-@import "bootstrap/dropdowns";
-@import "bootstrap/button-groups";
-@import "bootstrap/input-groups";
-@import "bootstrap/navs";
-@import "bootstrap/navbar";
-@import "bootstrap/breadcrumbs";
-@import "bootstrap/pagination";
-@import "bootstrap/pager";
-@import "bootstrap/labels";
-@import "bootstrap/badges";
-// @import "bootstrap/jumbotron";
-// @import "bootstrap/thumbnails";
-@import "bootstrap/alerts";
-@import "bootstrap/progress-bars";
-@import "bootstrap/media";
-@import "bootstrap/list-group";
-@import "bootstrap/panels";
-@import "bootstrap/wells";
-@import "bootstrap/close";
+// Core CSS
+@import "scss/reboot";
+@import "scss/type";
+@import "scss/images";
+@import "scss/code";
+@import "scss/grid";
+@import "scss/tables";
+@import "scss/forms";
+@import "scss/buttons";
 
-// Components w/ JavaScript.
-@import "bootstrap/modals";
-@import "bootstrap/tooltip";
-@import "bootstrap/popovers";
-// @import "bootstrap/carousel";
+// Components
+@import "scss/transitions";
+@import "scss/dropdown";
+@import "scss/button-group";
+@import "scss/input-group";
+@import "scss/custom-forms";
+@import "scss/nav";
+@import "scss/navbar";
+@import "scss/card";
+@import "scss/breadcrumb";
+@import "scss/pagination";
+@import "scss/badge";
+@import "scss/jumbotron";
+@import "scss/alert";
+@import "scss/progress";
+@import "scss/media";
+@import "scss/list-group";
+@import "scss/responsive-embed";
+@import "scss/close";
 
-// Utility classes.
-@import "bootstrap/utilities";
-@import "bootstrap/responsive-utilities";
+// Components w/ JavaScript
+@import "scss/modal";
+@import "scss/tooltip";
+@import "scss/popover";
+@import "scss/carousel";
+
+// Utility classes
+@import "scss/utilities";
 
 /**
  * External resource: Font Awesome.
@@ -70,33 +69,16 @@ $navbar-padding-horizontal: 0;
 /**
  * Base variables, mixins and helpers.
  */
-@import "base";
+@import "base-visual";
+@import "base-structure";
 
 /**
- * Override bootstrap defaults.
+ * Overrides for third party libraries / vendors and bootstrap defaults.
  */
-@import "modules/custom/bootstrap";
-@import "modules/custom/ckeditor";
-@import "modules/custom/codemirror";
-@import "modules/custom/select2";
-
-/**
- * Some modules
- */
-@import "modules/fonts";
-@import "nav/nav";
-@import "modules/footer";
-@import "modules/textstyles";
-@import "modules/popover";
-@import "modules/dashboard";
-@import "modules/aside";
-@import "modules/forms";
-@import "modules/liveeditor";
-@import "modules/login";
-@import "modules/extend";
-@import "modules/omnisearch";
-@import "modules/widgets";
-@import "modules/files";
+@import "lib/bootstrap";
+@import "lib/ckeditor";
+@import "lib/codemirror";
+@import "lib/select2";
 
 /**
  * Bolt User Interface Components.
@@ -110,13 +92,6 @@ $navbar-padding-horizontal: 0;
 @import "buic/select";
 @import "buic/stack";
 
-/**
- * Editcontent.
- */
-@import "editcontent/legacy";
-@import "editcontent/fieldset";
-@import "editcontent/field";
-//
 @import "editcontent/fields/categories";
 @import "editcontent/fields/checkbox";
 @import "editcontent/fields/date";
@@ -141,7 +116,36 @@ $navbar-padding-horizontal: 0;
 @import "editcontent/fields/textarea";
 @import "editcontent/fields/video";
 
-/**
- * The leftover styles.
- */
-@import "modules/bolt";
+/**** Structure */
+@import "structure/bolt-structure.scss";
+@import "structure/extends-structure.scss";
+@import "structure/aside-structure.scss";
+@import "structure/dashboard-structure.scss";
+@import "structure/footer-structure.scss";
+@import "structure/textstyles-structure.scss";
+@import "structure/form-structure.scss";
+@import "structure/login-structure.scss";
+@import "structure/pop-over-structure.scss";
+@import "structure/live-editor-sctructure.scss";
+@import "structure/omnisearch-stucture.scss";
+@import "structure/widgets-structure.scss";
+@import "structure/fonts-structure.scss";
+@import "nav/nav.scss";
+@import "structure/edit_content_fieldset-structure.scss";
+@import "structure/edit_content_field-structure.scss";
+
+/**** Visual */
+//@import "visual/colors.scss";
+@import "visual/bolt-visual.scss";
+@import "visual/aside-visual.scss";
+@import "visual/dashboard-visual.scss";
+@import "visual/textstyles-visual.scss";
+@import "visual/form-visual.scss";
+@import "visual/login-visual.scss";
+@import "visual/pop-over-visual.scss";
+@import "visual/live-editor-visual.scss";
+@import "visual/omnisearch-visual.scss";
+@import "visual/nav-visual.scss";
+@import "visual/edit_content_fieldset-visual.scss";
+@import "visual/edit_content_field-visual.scss";
+@import "visual/footer-visual.scss";

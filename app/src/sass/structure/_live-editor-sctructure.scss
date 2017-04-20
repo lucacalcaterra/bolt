@@ -2,25 +2,8 @@
 #navpage-primary {
     .nav .close-live-editor {
         display: none;
-
         margin-right: 15px;
-
         cursor: pointer;
-        background: $btn-danger-bg;
-
-        a {
-            color: $btn-danger-color;
-        }
-    }
-
-    .nav .save-live-editor {
-        @extend .close-live-editor;
-        background-color: $btn-primary-bg;
-        &.disabled {
-            opacity: 0.65;
-            cursor: not-allowed;
-        }
-    
     }
 }
 
@@ -50,11 +33,6 @@
         display: none;
     }
 
-    /*#navpage-wrapper {
-        @extend #navpage-wrapper.nav-secondary-collapsed;
-        @extend #navpage-wrapper.nav-secondary-collapsed-hoverable;
-    }*/
-
     #navpage-primary {
         transition: background-color 0.5s;
 
@@ -63,8 +41,7 @@
             display: none;
         }
 
-        .nav .close-live-editor,
-        .nav .save-live-editor {
+        .nav .close-live-editor {
             display: inline-block;
         }
 

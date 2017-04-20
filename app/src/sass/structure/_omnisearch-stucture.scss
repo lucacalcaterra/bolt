@@ -20,18 +20,7 @@
         small {
             display: block;
             font-size: smaller;
-            color: #999;
         }
     }
 
-    // Highlighted result.
-    .select2-results__option--highlighted small {
-        color : #fff; // better contrast.
-    }
-
-    // Input field.
-    .select2-search__field {
-        color: #000 !important;
-        background: #fff !important;
-    }
 }

@@ -1,35 +1,31 @@
-
 aside {
-    section {
-        background-color: #F2F2F2;
-        border: 1px solid $panel-default-border;
-        padding: 0 10px 10px;
-        margin-bottom: 20px;
-    }
 
-    section h2 {
-        font-size: 17px;
-        line-height: 21px;
-        margin: 10px 0 6px 0;
-        color: #333;
-    }
+  //  section {
+  //      padding: 0 10px 10px;
+  //      margin-bottom: 20px;
+  //  }
 
-    .morelink {
+  //  section h2 {
+  //      font-size: 17px;
+  //      line-height: 21px;
+  //      margin: 10px 0 6px 0;
+  //  }
+
+  //  section p { // wordt section wel gebruikt ?!?!?!
+  //      font-size: 12px;
+  //      line-height: 18px;
+  //      margin: 4px 0;
+  //  }
+
+    .morelink {                 // Niet gebruikt in aside?!?!
         font-weight: normal;
         line-height: 1em;
         position: static;
     }
 
-    section p {
-        font-size: 12px;
-        line-height: 18px;
-        margin: 4px 0;
-    }
-
     .panel {
         border-radius: 0;
-        margin-left: 12px;
-        border-color: $panel-default-border;
+     // margin-left: 12px;
     }
 
     .panel-body > ul {
@@ -46,10 +42,6 @@ aside {
     .panel-body > ul li {
         line-height: 18px;
         margin-bottom: 4px;
-    }
-
-    .panel-body > ul li small {
-        color: #777;
     }
 
     .btn-group {

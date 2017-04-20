@@ -129,52 +129,9 @@
     }
 }
 
-.navbar {
-    min-height: 54px;
-    margin-bottom: 0;
-
-    .navbar-brand {
-        display: inline-block;
-        top: 0;
-        color: #fff;
-        font-size: 28px;
-        line-height: 28px;
-        font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        margin: 0;
-        padding: 8px 8px 8px 2px;
-
-        @media (max-width: 640px) {
-           padding: 10px 8px 8px 6px;
-        }
-
-        img {
-            width: 26px;
-            height: 26px;
-            margin: 0 2px 2px 0;
-        }
-    }
-
-    form {
-        padding: 0;
-        display: inline;
-    }
-
-    & .dropdown button {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-size: 13px;
-        padding: 9px 15px 27px 8px;
-        height: 2.4em;
-        font-weight: normal;
-    }
-
-    .navbar-collapse .navbar.pull-right {
-        margin-top: 10px;
-    }
-}
-
 .navbar-site {
     display: inline-block;
-    color: #ccc !important;
+    color: $silver !important;
     font-size: 22px;
     line-height: 30px;
     margin-top: 8px;
@@ -184,7 +141,7 @@
     font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
     i {
-        color: #ccc !important;
+        color: $silver !important;
         font-size: 16px;
     }
 }
@@ -193,9 +150,9 @@
 .navbar-site:hover,
 .navbar-site:hover i
 {
-    color: #fff !important;
+    color: $white !important;
     text-decoration: none;
-    background-color: #428bca;
+    background-color: $shipe-cove;
     outline: 0;
 }
 
@@ -204,13 +161,13 @@
     margin: 11px 0 0 -8px;
     padding: 5px 8px 4px 5px;
     background-color: desaturate(lighten($boltblue, 45), 35);
-    border: 0 solid #fff !important;
-    color: #222;
+    border: 0 solid $white !important;
+    color: $mine;
 }
 
 .navbar-toggle:hover,
 .navbar-toggle:focus {
-    background-color: #fff !important;
+    background-color: $white !important;
 }
 
 .navbar-header {
@@ -287,7 +244,7 @@
         }
 
         &>span {
-            color: #888;
+            color: $dove;
         }
     }
 
@@ -311,10 +268,10 @@
         $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}, #{$list}";
     }
     #{$list} {
-        border: 1px dashed #F99;
+        border: 1px dashed $milano;
     }
     .row {
-        border: 1px dashed #99F;
+        border: 1px dashed $shipe-cove;
     }
 }
 
