@@ -26,6 +26,8 @@ aside {
     .panel {
         border-radius: 0;
      // margin-left: 12px;
+        border: 1px solid $alto;
+        margin-bottom: 20px;
     }
 
     .panel-body > ul {

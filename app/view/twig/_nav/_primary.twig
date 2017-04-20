@@ -1,4 +1,4 @@
-<nav id="navpage-primary" class="navbar navbar-static-top navbar-inverse navbar-bolt">
+<nav id="navpage-primary" class="navbar navbar-bolt">
 
     <div>
         <button type="button" class="navbar-toggle" data-xaction="bolt.sidebar.toggle()">
@@ -14,10 +14,7 @@
         <a href="{{ path('dashboard') }}" class="navbar-site hidden-xs"><span>{% if app.config.get('general/sitename') %}{{ app.config.get('general/sitename') }}{% else %}Site{% endif %}</span></a>
     </div>
 
-
-    <div class="flex-spacer">
-        {# spacer #}
-    </div>
+    <span></span>
 
     <div>
            {# one omnisearch here, for "small and up", the other in the side-navbar #}
