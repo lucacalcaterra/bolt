@@ -107,10 +107,9 @@
          */
         _update: function () {
             var self = this,
-                url = 'https://api.embed.ly/1/oembed',
+                url = 'https://noembed.com/embed',
                 request = {
                     format: 'json',
-                    key:    '51fa004148ad4d05b115940be9dd3c7e',
                     url:    self._ui.url.val()
                 };
 
