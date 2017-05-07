@@ -43,3 +43,10 @@ div[data-bolt-fieldset="repeater"] {
         display: none;
     }
 }
+
+
+// No spacing for hidden fields.
+div[data-bolt-fieldset="hidden"] {
+    margin: 0;
+    border: 0;
+}
